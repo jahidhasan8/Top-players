@@ -10,11 +10,11 @@
 </head>
 
 <body>
-       <!-- header section  -->
-    <header class=" ms-5 me-5">
-        
-           <!-- banner  -->
-        <div class="card mb-3 w-100  bg-dark text-white ">
+    <!-- header section  -->
+    <header class=" ms-5 me-5 ">
+
+        <!-- banner  -->
+        <div style="background-color:rgba(0, 0, 0, 0.774);" class="card mb-3 w-100 text-white">
             <div class="row g-0">
                 <div class="col-md-4 mt-5">
                     <img src="image/banner1.png" class="img-fluid rounded-start" alt="...">
@@ -33,8 +33,113 @@
         </div>
     </header>
 
-    <main>
-         
+    <!-- players section  -->
+    <main class="bg-dark ms-5 mt-5 me-5">
+        <div class="row row-cols-1 row-cols-md-4 g-4 ms-5 me-5">
+            <!-- player 1 -->
+            <div class="col">
+                <div class="card bg-dark text-white border">
+                    <img src="image/card1.png" class="card-img-top" alt="...">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Lionel Messi</h5>
+                        <p class="card-text">80 Goals<span class="fs-5"> .</span> <span>120 Assist</span></p>
+                        <button class=" btn btn-primary fs-4 ps-5 pe-5">Select</button>
+                    </div>
+                </div>
+            </div>
+            <!-- player-2  -->
+            <div class="col">
+                <div class="card bg-dark text-white border">
+                    <img src="image/card2.png" class="card-img-top" alt="...">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Neymar Jr</h5>
+                        <p class="card-text">40 Goals<span class="fs-5"> .</span> <span>80 Assist</span></p>
+                        <button class=" btn btn-primary fs-4 ps-5 pe-5">Select</button>
+                    </div>
+                </div>
+            </div>
+            <!-- player-3 -->
+            <div class="col">
+                <div class="card bg-dark text-white border">
+                    <img src="image/card3.png" class="card-img-top" alt="...">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Kylian Mbappé</h5>
+                        <p class="card-text">35 Goals<span class="fs-5"> .</span> <span>60 Assist</span></p>
+                        <button class=" btn btn-primary fs-4 ps-5 pe-5">Select</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- player list -->
+            <div class="col">
+                <div class="card bg-dark text-white border border-primary">
+                    <h3 class="mt-5 text-center">Chosen-player</h3>
+                    <div class="card-body">
+                        <p>1</p>
+                    </div>
+                </div>
+            </div>
+            <!-- player-4 -->
+            <div class="col">
+                <div class="card bg-dark text-white border">
+                    <img src="image/card6.png" class="card-img-top" alt="...">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Renato Sanches</h5>
+                        <p class="card-text">36 Goals<span class="fs-5"> .</span> <span>67 Assist</span></p>
+                        <button class="btn btn-primary fs-4 ps-5 pe-5">Select</button>
+                    </div>
+                </div>
+            </div>
+            <!-- player-5 -->
+            <div class="col">
+                <div class="card bg-dark text-white border">
+                    <img src="image/card5.png" class="card-img-top" alt="...">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Sergio Ramos</h5>
+                        <p class="card-text">50 Goals<span class="fs-5"> .</span> <span>80 Assist</span></p>
+                        <button class="btn btn-primary fs-4 ps-5 pe-5">Select</button>
+                    </div>
+                </div>
+            </div>
+            <!-- player-6 -->
+            <div class="col">
+                <div class="card bg-dark text-white border">
+                    <img src="image/card4.png" class="card-img-top" alt="...">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Vítor Machado</h5>
+                        <p class="card-text">48 Goals<span class="fs-5"> .</span> <span>760 Assist</span></p>
+                        <button class="btn btn-primary fs-4 ps-5 pe-5">Select</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- budget and money expenses  -->
+
+            <div class="col">
+                <div class="card bg-dark text-white border border-primary">
+                    <h3 class="mt-5 text-center">Budget</h3>
+                    <div class="card-body">
+                        <p class="d-inline">Per Player : </p>
+                        <input class="bg-dark text-white border ms-2" type="text" placeholder="player cost">
+
+                        <button class="btn btn-primary mt-3 px-5 ms-5 mb-4 ">Calculate</button>
+                        <p class="">Player-Expenses : $ <span></span></p>
+
+                        <!-- manager and Coach expenses  -->
+                        <p class="d-inline">Manager : </p>
+                        <input class="bg-dark text-white border d-inline ms-2" type="text" placeholder="Manager cost">
+                        <p class="d-inline ">Coach : </p>
+                        <input class="bg-dark text-white border d-inline ms-4 mt-3" type="text"
+                            placeholder="Coach Cost">
+
+                        <button class="btn btn-primary mt-3 px-5 ms-5 mb-4">Calculate Total</button>
+                        <p>Total : <span></span></p>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
     </main>
 
 
