@@ -8,7 +8,11 @@ document.getElementById('btn-calculate').addEventListener('click', function () {
     //  calculate player expenses
     const playerExpenses = getInputValue('player-expenses-field')
     const totalPlayerExpenses = playerExpenses * chosenPlayerNumber;
-
+      
+    // validation 
+    if(Number.isNaN(totalPlayerExpenses)){
+        return 
+    }
 
     setElementValue('player-total-expenses', totalPlayerExpenses);
 })
@@ -20,6 +24,7 @@ document.getElementById('btn-calculate-total').addEventListener('click', functio
     const playerExpensesField = document.getElementById('player-total-expenses');
     const playerExpensesString = playerExpensesField.innerText;
     const playerExpenses = parseInt(playerExpensesString);
+   
 
     //  manager expenses
     const managerExpensesField = getInputValue('manager-expenses-field');
@@ -29,7 +34,13 @@ document.getElementById('btn-calculate-total').addEventListener('click', functio
 
     //  calculate total expenses 
     const totalExpenses = playerExpenses + managerExpensesField + coachExpensesField;
+
+    //   validation 
+    if(Number.isNaN(totalExpenses)){
+        return 
+    }
     setElementValue('total-expenses', totalExpenses);
+    
 
 })
 

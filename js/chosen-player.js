@@ -5,7 +5,6 @@ function choosePlayer(name) {
 
     // player choosing validation
     if (playerList.length > 4) {
-        // playerList[i].disabled=false;
         
          alert('Sorry you can not choose more than 5 players');
          return playerList[i].disabled=false;
