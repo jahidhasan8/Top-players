@@ -33,7 +33,8 @@
                 <div class="col-md-4 mt-5">
                     <div class="card-body mt-5">
                         <h1 class="card-title fs-1 fst-italic  fw-bold text-primary">Choose Your Top Player</h1>
-                        <p class="card-text mt-3 fs-5 text-info text-opacity-75">Make your own football lineup with
+
+                        <p class="card-text mt-4 fs-5 text-info text-opacity-75">Make your own football lineup with
                             player photos. A free squad
                             builder that lets, own Football Formation. Choose your favorite players to form your squad.
                         </p>
@@ -87,7 +88,7 @@
                 </div>
             </div>
 
-            <!-- player list -->
+            <!-- chosen player list -->
             <div class="col">
                 <div class="card bg-dark text-white border border-primary">
                     <h3 class="mt-5 text-center">Chosen-player <span id="total-added-player">0</span></h3>
@@ -138,32 +139,41 @@
             <!-- budget and money expenses  -->
 
             <div class="col">
-                <div class="card bg-dark text-white border border-primary">
+                <div class="card bg-dark text-white border border-primary col-md-10">
                     <h3 class="mt-5 text-center">Budget</h3>
-                    <div class="card-body fs-5 px-2">
-                        <p class="d-inline ">Per Player : </p>
-                        <input id="player-expenses-field" class=" w-50 bg-dark text-white border ms-2 p-2" type="text"
-                            placeholder="player cost">
+                    <div class=" fs-5 px-2">
 
-                        <button id="btn-calculate" class="btn btn-primary mt-3 px-5 ms-5 mb-4 ">Calculate</button>
-                        <p class="">Player-Expenses : $ <span id="player-total-expenses">0</span></p>
+                        <!-- player expenses  -->
+                        <div>
+                            <p class="d-inline ">Per Player : </p>
+                            <input id="player-expenses-field" class=" w-50 bg-dark text-white border ms-2 p-2"
+                                type="text" placeholder="player cost">
+
+                            <div class="d-grid gap-2 col-md-12 mx-auto">
+                                <button id="btn-calculate" class="btn btn-primary mt-3 mb-3"
+                                    type="button">Calculate</button>
+                            </div>
+                            <p class="">Player-Expenses : $ <span id="player-total-expenses">0</span></p>
+                        </div>
 
                         <!-- manager and Coach expenses  -->
-                        <div class="">
-                            <p class="d-inline">Manager : </p>
-                            <input id="manager-expenses-field" class=" w-50 bg-dark text-white border ms-4 p-2"
-                                type="text" placeholder="Manager cost">
+                        <div>
+                            <div class="">
+                                <p class="d-inline">Manager : </p>
+                                <input id="manager-expenses-field" class=" w-50 bg-dark text-white border ms-4 p-2"
+                                    type="text" placeholder="Manager cost">
+                            </div>
+                            <div>
+                                <p class="d-inline ">Coach : </p>
+                                <input id="coach-expenses-field" class="w-50 bg-dark text-white border ms-5 mt-3 px-2"
+                                    type="text" placeholder="Coach Cost">
+                            </div>
+                            <div class="d-grid gap-2 col-md-12 mx-auto">
+                                <button id="btn-calculate-total" class="btn btn-primary mt-3 mb-3"
+                                    type="button">Calculate Total</button>
+                            </div>
                         </div>
-                        <div class="">
-                            <p class="d-inline ">Coach : </p>
-                            <input id="coach-expenses-field" class="w-50 bg-dark text-white border ms-5 mt-3 px-2"
-                                type="text" placeholder="Coach Cost">
-                        </div>
-
-                        <button id="btn-calculate-total" class="btn btn-primary mt-3 px-5 ms-5 mb-4 ">Calculate
-                            Total</button>
                         <p class="">Total : $<span id="total-expenses">0</span></p>
-
                     </div>
                 </div>
             </div>
