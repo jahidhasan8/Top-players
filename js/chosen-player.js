@@ -11,6 +11,9 @@ function choosePlayer(name) {
         // get player name
     const playerName = name.parentNode.children[0].innerText
     playerList.push(playerName);
+    
+    //   get total number player added
+    document.getElementById('total-added-player').innerText=playerList.length;
 
         // get choosing-player-list field 
     const player = document.getElementById('choose-player-list');
